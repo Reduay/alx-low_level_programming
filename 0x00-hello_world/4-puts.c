@@ -1,29 +1,15 @@
 #include <stdio.h>
 
-
-
 /**
+ * main - Prints a string
  *
- *  * main - Prints a string
- *
- *   *
- *
- *    * Return: 0
- *
- *     */
-
+ * Return: 0
+ */
 int main(void)
-
 {
+	char myStr[] = "\"Programming is like building a multilingual puzzle";
 
-		char myStr[] = "\"Programming is like building a multilingual puzzle";
+	puts(myStr);
 
-
-
-			puts(myStr);
-
-
-
-				return (0);
-
+	return (0);
 }
