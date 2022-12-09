@@ -1,24 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - Entry point
+ * main -  Print all single digit numbers using only putchar
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	int digit;
 
-	i = 48;
-	while  (i < 58)
-	{
-		putchar(i);
-		i++;
-	}
-	putchar('\n');
+	for (digit = 0; digit < 10; digit++)
+		putchar(digit + '0');
 
-	return (0);
+	putchar('\n')
+
+		return (0);
 }
