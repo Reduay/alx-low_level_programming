@@ -1,32 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints out all the numbers of base 16 in lowercase
+ * Return: 0
  */
 int main(void)
 {
 	int i;
-	char l;
 
-	i = 48;
-	while (i < 58)
-	{
+	for (i = 48; i < 58; i++)
 		putchar(i);
-		i++;
-	}
-
-	l = 'a';
-	while (l <= 'f')
-	{
-		putchar(l);
-		l++;
-	}
+	for (i = 'a'; i <= 'f'; i++)
+		putchar(i);
 	putchar('\n');
-
 	return (0);
 }
