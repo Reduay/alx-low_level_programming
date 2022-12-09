@@ -14,7 +14,7 @@ int main(void)
 	char l;
 
 	i = 48;
-	while  (i < 58)
+	while (i < 58)
 	{
 		putchar(i);
 		i++;
