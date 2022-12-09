@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-
 /**
  * main - Entry point
  *
@@ -9,7 +7,6 @@
 int main(void)
 {
 	char l;
-
 	l = 'a';
 	while (l <= 'z')
 	{
