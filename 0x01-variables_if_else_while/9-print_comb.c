@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /* betty style doc for function maingoes there */
-/** 
+/**
  * main - Entry point
  *
  * Return: Always 0 (Success)
