@@ -12,6 +12,6 @@ int main(void)
 		putchar(i);
 	for (i = 'a'; i <= 'f'; i++)
 		putchar(i);
-	putchar('\n');
+	putchar('\r');
 	return (0);
 }
