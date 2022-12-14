@@ -1,25 +1,20 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * main - Prints Holberton using _putchar()
  *
- * Return: 0
+ * Description: prints _putchar using putchar prototype
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	/*
-	 * int Holberton[] = {72, 111, 108, 98, 101, 114, 116,
-			111, 110};
-	*/
-	char Holberton[] = "_putchar\n";
-	int ij;
+	char str[] = "_putchar";
+	int ch;
 
-	for (ij = 0; ij < 9; ij++)
-	{
-		_putchar(Holberton[ij]);
-	}
-	/*
-	 * _putchar(10);
-	 */
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
+	_putchar('\n');
+
 	return (0);
 }
