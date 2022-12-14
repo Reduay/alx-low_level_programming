@@ -1,49 +1,51 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_times_table - Print the `n` times table, starting with 0.
- * Description: If `n` is greater than 15 or less than 0, print nothing.
- * @n: int type number
+ * print_times_table - prints the times table up to the integer input
+ * @n: integer input
+ *
+ * Return: void
  */
+
 void print_times_table(int n)
 {
-	int x = 0, y, z;
+	int a, b, c, d, e, f;
 
-	if (n > 15 || n < 0)
-		return;
-	while (x <= n)
+	if (n >= 0 && n < 15)
 	{
-		for (y = 0; y <= n; y++)
+		for (a = 0; a <=  n; a++)
 		{
-			z = x * y;
-			if (z > 99)
+			for (b = 0; b <= n; b++)
 			{
-				_putchar(z / 100 + '0');
-				_putchar((z / 10 % 10) + '0');
-				_putchar(z % 10 + '0');
-			}
-			else if (z > 9)
-			{
-				_putchar(' ');
-				_putchar(z / 10 + '0');
-				_putchar(z % 10 + '0');
-			}
-			else if (y != 0)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(z + '0');
-			}
-			else
-				_putchar(z + '0');
-
-			if (y != n)
-			{
-				_putchar(',');
-				_putchar(' ');
+				c = a * b; d = c / 100; e = (c /  10) % 10;
+				f = (c % 100) % 10;
+				if (b == 0)
+				{
+					_putchar('0');
+				}
+				else if (c < 10)
+				{
+					_putchar(' '); _putchar(' ');
+					_putchar('0' + f);
+				}
+				else if (c < 100)
+				{
+					_putchar(' ');
+					_putchar('0' + e); _putchar('0' + f);
+				}
+				else
+				{
+					_putchar('0' + d);
+					_putchar('0' + e);
+					_putchar('0' + f);
+				}
+				if (b < n)
+				{
+					_putchar(','); _putchar(' ');
+				}
+				else
+					_putchar('\n');
 			}
 		}
-		_putchar('\n');
-		x++;
 	}
 }
